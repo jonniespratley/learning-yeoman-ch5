@@ -1,0 +1,9 @@
+<h1>_sidebars</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to '-sidebar' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

@@ -1,0 +1,9 @@
+<h1>_headers</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to '-header' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

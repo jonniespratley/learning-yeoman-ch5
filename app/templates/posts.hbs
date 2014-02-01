@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+
+<ul>
+ {{#each model}}
+ <li id="{{this.id}}">
+	{{#link-to 'post' this}}
+	<h3>{{this.title}}</h3>
+	{{/link-to}}
+	<p>{{this.body}}</p>
+</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
