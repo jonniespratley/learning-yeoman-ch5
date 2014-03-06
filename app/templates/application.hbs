@@ -5,26 +5,13 @@
 				<a href="#/">Home</a>
 			</li>
 			<li>
-				<a href="#/about">About</a>
+				<a href="#/posts">Posts</a>
 			</li>
 		</ul>
 		<h3 class="brand text-muted">yo-ember</h3>
 		<hr />
 	</header>
-	<div class="jumbotron">
-		<h1>'yo-ember'</h1>
-		<img src="https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/yo-ember.png" class="img-" />
-	</div>
-	<div id="pages" class="pages">
-		<ul class="list-group">
-			{{#each item in controller}}
-			<li class="list-group-item">
-				{{item}}
-			</li>
-			{{/each}}
-		</ul>
-		{{outlet}}
-	</div>
+	{{outlet}}
 	<footer class="footer">
 		<hr />
 		<p>

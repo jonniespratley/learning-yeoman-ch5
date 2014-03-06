@@ -1,7 +1,6 @@
 /* Put your CSS here */
 @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css');
-body {
-	background: #fff;
+body {                 
 	padding: 10px 25px;
 }
 .jumbotron {
@@ -14,11 +13,3 @@ body {
 .post img {
 	width: 55px;
 }
-/*
- .footer{
- padding: 10px;
- font-size:11px;
- color:#888;
- text-align:center;
- }
- */

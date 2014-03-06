@@ -1,2 +1,5 @@
-LearningYeomanCh5.Router ->
-  # Add your routes here
+LearningYeomanCh5.Router.map( ->
+  @route('index', path: '/')
+  @resource('post', path: '/posts/:post_id')
+  @resource('posts')
+)
