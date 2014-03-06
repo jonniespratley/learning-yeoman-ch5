@@ -1,0 +1,20 @@
+<h1>posts</h1>
+<div class="item-list">
+	
+	<ul class="list-unstyled">
+		{{#each model}}
+		<li class="media post" data-id="{{post.id}}">
+			{{#link-to 'posts' this}} <img class="media-object img-thumbnail" alt="{{post.title}}" {{bind-attr src=post.image}}/>
+			{{/link-to}}
+			<div class="media-body">
+				<h4 class="media-heading">{{post.title}}</h4>
+				<p>
+					{{post.body}}
+				</p>
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+</div>
+<div class="item-detail"></div>
+{{outlet}} 
