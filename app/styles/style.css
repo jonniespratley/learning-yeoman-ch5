@@ -1,11 +1,16 @@
 /* Put your CSS here */
 @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css');
-body {                 
+body {
 	padding: 10px 25px;
 }
 .jumbotron {
-	text-transform: lowercase;
+	text-transform: uppercase;
 	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
+}
+.jumbotron h1 {
+	font-size: 2em;
+	font-family: 'Droid Sans', sans-serif;
 }
 .jumbotron img {
 	margin: 15px auto;
@@ -13,3 +18,4 @@ body {
 .post img {
 	width: 55px;
 }
+
