@@ -1,6 +1,5 @@
 #global Ember
 LearningYeomanCh5.Post = DS.Model.extend(
-  id: DS.attr("string")
   title: DS.attr("string")
   author: DS.attr("string")
   intro: DS.attr("string")

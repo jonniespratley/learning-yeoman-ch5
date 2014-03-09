@@ -6,7 +6,7 @@ Ember.LOG_BINDINGS = true
 
 
 LearningYeomanCh5.Store = DS.Store.extend(
-	adapter: 'DS.FixtureAdapter'
+	adapter: DS.FixtureAdapter.extend()
 )
 
 
