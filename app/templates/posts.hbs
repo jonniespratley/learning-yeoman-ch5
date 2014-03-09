@@ -3,13 +3,13 @@
 	
 	<ul class="list-unstyled">
 		{{#each model}}
-		<li class="media post" data-id="{{post.id}}">
-			{{#link-to 'posts' this}} <img class="media-object img-thumbnail" alt="{{post.title}}" {{bind-attr src=post.image}}/>
+		<li class="media post" data-id="{{id}}">
+			{{#link-to 'posts' this}} <img class="media-object img-thumbnail" alt="{{title}}" {{bind-attr src=image}}/>
 			{{/link-to}}
 			<div class="media-body">
-				<h4 class="media-heading">{{post.title}}</h4>
+				<h4 class="media-heading">{{title}}</h4>
 				<p>
-					{{post.body}}
+					{{body}}
 				</p>
 			</div>
 		</li>
@@ -17,4 +17,4 @@
 	</ul>
 </div>
 <div class="item-detail"></div>
-{{outlet}} 
+ 

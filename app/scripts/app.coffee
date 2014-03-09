@@ -3,6 +3,14 @@ LearningYeomanCh5 = window.LearningYeomanCh5 = Ember.Application.create(
 	LOG_ACTIVE_GENERATION: true
 )
 Ember.LOG_BINDINGS = true
+
+
+LearningYeomanCh5.Store = DS.Store.extend(
+	adapter: 'DS.FixtureAdapter'
+)
+
+
+
 # Order and include as you please.
 require 'scripts/config'
 require 'scripts/controllers/*'
@@ -11,3 +19,5 @@ require 'scripts/models/*'
 require 'scripts/routes/*'
 require 'scripts/views/*'
 require 'scripts/router'
+
+

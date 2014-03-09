@@ -1,5 +1,11 @@
 LearningYeomanCh5.Router.map( ->
-  @route('index', path: '/')
-  @resource('post', path: '/posts/:post_id')
-  @resource('posts')
+	#Main View
+	@route('index', path: '/')
+	
+	#Post View
+	@resource('posts', () ->
+		@route('post', path: ':post_id')
+	)
+	#About View
+	@resource 'about'
 )

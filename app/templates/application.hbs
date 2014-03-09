@@ -12,22 +12,7 @@
 		<hr />
 	</header>
 	{{outlet}}
-	<ul class="list-group">
-		<ul class="list-unstyled">
-			{{#each post in controller}}
-			<li class="media post" data-id="{{post.id}}">
-				<a class="pull-left" {{bind-attr href=post.title}}> 
-					<img class="media-object img-thumbnail" alt="{{post.title}}" {{bind-attr src=post.image}}/> </a>
-				<div class="media-body">
-					<h4 class="media-heading">{{post.title}}</h4>
-					<p>
-						{{post.body}}
-					</p>
-				</div>
-			</li>
-			{{/each}}
-		</ul>
-	</ul>
+	
 	<footer class="footer">
 		<hr />
 		<p>
