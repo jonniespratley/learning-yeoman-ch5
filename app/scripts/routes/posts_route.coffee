@@ -1,4 +1,4 @@
 LearningYeomanCh5.PostsRoute = Ember.Route.extend(
 	setupController: (controller) ->
-		#controller.set('model', DS.Store.get('posts'));
+		controller.set('content', DS.Store.get('posts'));
 )

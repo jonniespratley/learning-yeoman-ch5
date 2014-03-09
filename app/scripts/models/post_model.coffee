@@ -10,7 +10,6 @@ LearningYeomanCh5.Post = DS.Model.extend(
   )
 )
 
-# delete below here if you do not want fixtures
 LearningYeomanCh5.Post.FIXTURES = [
   {
     id: 0
