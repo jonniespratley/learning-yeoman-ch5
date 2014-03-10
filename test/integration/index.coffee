@@ -1,12 +1,14 @@
 describe "Index page", ->
-    it "displays a welcome message", ->
-        visit('/').then ->
-            find('div.well').text().should.contain 'Welcome to Yeoman and Ember.js'
+	it "displays a welcome message", ->
+		visit('/').then ->
+			find('div.well').text().should.contain 'Welcome to Yeoman and Ember.js'
 
 describe "ApplicationRoute", ->
-    describe "model property", ->
-        applicationRoute = LearningYeomanCh5.ApplicationRoute.create()
+	
+	describe "model property", ->
+		beforeEach ->
+			applicationRoute = LearningYeomanCh5.ApplicationRoute.create()
 
-        it "should have the right number of items", ->
-            model = applicationRoute.model()
-            model.should.have.length 3
+		it "should have the right number of items", ->
+			model = applicationRoute.model()
+			expect(model.features.length).toBe(3)
