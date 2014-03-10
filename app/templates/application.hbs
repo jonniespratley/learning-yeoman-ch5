@@ -1,17 +1,13 @@
 <div id="app" class="container">
 	<header class="header">
 		<ul class="nav nav-pills pull-right">
-			<li class="">
-				<a href="#/">Home</a>
-			</li>
+			{{#each model.menu.pub}}
 			<li>
-				<a href="#/about">About</a>
+				<a {{bind-attr href=href}}>{{ title }}</a>
 			</li>
-			<li>
-				<a href="#/posts">Posts</a>
-			</li>
+			{{/each}}
 		</ul>
-		<h3 class="brand text-muted">yo-ember</h3>
+		<h3 class="brand text-muted"> {{ model.sitetitle }} </h3>
 		<hr />
 	</header>
 	{{outlet}}
@@ -23,6 +19,5 @@
 		</p>
 	</footer>
 </div>
-
 
 {{log model}}

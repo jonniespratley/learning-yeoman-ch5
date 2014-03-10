@@ -21,31 +21,12 @@ window.Config =
 	session: 
 		authorized: false
 		user: null
-	layout: 
-	  header: "views/_header.html"
-	  sidebar: "views/_sidebar.html"
-	  content:"views/_content.html"
-	  footer: "views/_footer.html"
 	menu:
-		admin: [
-			id: 1, title: "Settings", href: "/settings", icon: "cog"
-		]
+		admin: []
 		pub: [
-			#title: 'Login', icon: 'user', href:'/login', requireLogin: false
-		#,
-			#title: 'Register', icon: 'lock', href:'/register', requireLogin: false
-		]
-		user: [
-			id: 1, title: "Dashboard", icon: "dashboard", href: "/dashboard", requireLogin: true
+			title: 'Home', icon: 'home', href:'#/', requireLogin: false
 		,
-			id: 2, title: "My Profile", icon: "user", href: "/profile", requireLogin: true
+			title: 'About', icon: 'info', href:'#/about', requireLogin: false
+		,
+			title: 'Posts', icon: 'list', href:'#/posts', requireLogin: false
 		]
-	logout:
-		redirect: "/login"
-		message: "Good bye..."
-	login:
-		redirect: "/dashboard"
-		image: "images/logo-login.png"
-		message: "Welcome {{user.username}}"
-	
-
