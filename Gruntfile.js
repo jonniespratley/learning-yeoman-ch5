@@ -308,7 +308,7 @@ module.exports = function (grunt) {
             dist: [
                 'emberTemplates',
                 'coffee',
-                'imagemin',
+                //'imagemin',
                 'svgmin',
                 'htmlmin'
             ]
