@@ -1,18 +1,16 @@
-<h1>post</h1>
-
-<table>
-  {{#each model.attributes}}
-  <tr>
-    <td>
-      <strong>{{this.key}}:</strong>
-    </td>
-    <td>
-      {{this.value}}
-    </td>
-  </tr>
-  {{/each}}
-</table>
-
-{{#link-to 'post.edit' model}}Change{{/link-to}}
-
+<div id="post-details">
+	<legend>
+		Post Details
+	</legend>
+	<table class="table table-bordered">
+		{{#each model.attributes}}
+		<tr>
+			<td><strong>{{this.key}}:</strong></td>
+			<td> {{this.value}} </td>
+		</tr>
+		{{/each}}
+	</table>
+	{{#link-to 'post.edit' model classNames='btn btn-default'}}Edit{{/link-to}}
+</div>
+<br/>
 {{outlet}}

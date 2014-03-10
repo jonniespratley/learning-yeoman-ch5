@@ -1,27 +1,29 @@
 <div class="jumbotron">
-	<h1>Chapter 5</h1>
-	<h3>
-		My Ember Project
-	</h3>
-	<img src="https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/yo-ember.png" class="img-" />
+	<h1>
+		{{ model.feature.title }}
+	</h1>
+	
+	<img {{bind-attr src=model.feature.image}}/>
 	<p class="lead">
-		A starting point for a modern EmberJS application.
+		{{model.feature.body}}
 	</p>
 </div>
-<div id="pages" class="pages">
+<div class="features">
 	<ul class="list-group">
 		<ul class="list-unstyled">
-			{{#each post in model}}
-			<li class="media post" data-id="{{post.id}}">
-				<a class="pull-left" {{bind-attr href=post.title}}> 
-					<img class="media-object img-thumbnail" alt="{{post.title}}" {{bind-attr src=post.image}}/> </a>
+			
+			{{#each feature in model.features}}
+			<li class="media" data-id="{{feature.id}}">
+				<a class="pull-left"> 
+					<img class="media-object img-thumbnail" {{bind-attr src=feature.image}}/> </a>
 				<div class="media-body">
-					<h4 class="media-heading">{{post.title}}</h4>
+					<h4 class="media-heading">{{feature.title}}</h4>
 					<p>
-						{{post.body}}
+						{{feature.body}}
 					</p>
 				</div>
 			</li>
+			
 			{{/each}}
 		</ul>
 	</ul>

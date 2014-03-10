@@ -12,11 +12,17 @@ window.Config =
 		body: 'A starting point for a modern ember.js application.'
 
 	features: [
-		title: 'Handlebars.js', body: 'Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.', image: 'https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/feature-handlebars.png'
+		title: 'Yeoman' 
+		body: 'Yeoman is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications.' 
+		image: '/images/feature-yeoman.png'
 	,
-		title: 'EmberJS', body: 'Ember.js incorporates common idioms so you can focus on what makes your app special, not reinventing the wheel. Ember.js is built for productivity.', image: 'https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/feature-ember.png'
+		title: 'EmberJS'
+		body: 'Ember.js incorporates common idioms so you can focus on what makes your app special, not reinventing the wheel. Ember.js is built for productivity.'
+		image: '/images/feature-ember.png'
 	,
-		title: 'CSS3', body: 'CSS3 is the latest standard for CSS. CSS3 is completely backwards-compatible with earlier versions of CSS.', image: 'https://dl.dropboxusercontent.com/u/26906414/angular-cms/images/feature-css3.png'
+		title: 'Grunt'
+		body: 'The Grunt ecosystem is huge and its growing every day. With literally hundreds of plugins to choose from, you can use Grunt to automate just about anything.' 
+		image: '/images/feature-grunt.png'
 	]
 	session: 
 		authorized: false

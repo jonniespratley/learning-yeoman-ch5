@@ -16,6 +16,10 @@ body {
 	margin: 15px auto;
 }
 .post img {
-	width: 55px;
 }
-
+.features img{
+	width:60px;
+}
+.list-group .post img{
+	margin-right: 10px;
+}

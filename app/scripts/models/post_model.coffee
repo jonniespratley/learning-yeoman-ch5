@@ -21,17 +21,17 @@ LearningYeomanCh5.Post.reopen attributes: (->
 # delete below here if you do not want fixtures
 LearningYeomanCh5.Post.FIXTURES = [
 		id: 1
-		title: 'Handlebars.js'
-		body: 'Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.' 
-		image: 'https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/feature-handlebars.png'
+		title: 'Post 1'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet augue sed massa malesuada bibendum vitae at mi. Donec aliquam blandit cursus.' 
+		image: '//placehold.it/75'
 	,
 		id: 2
-		title: 'EmberJS'
-		body: 'Ember.js incorporates common idioms so you can focus on what makes your app special, not reinventing the wheel. Ember.js is built for productivity.' 
-		image: 'https://dl.dropboxusercontent.com/u/26906414/cdn/img/learning-yeoman/feature-ember.png'
+		title: 'Post 2'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet augue sed massa malesuada bibendum vitae at mi. Donec aliquam blandit cursus.' 
+		image: '//placehold.it/75'
 	,
 		id: 3
-		title: 'CSS3' 
-		body: 'CSS3 is the latest standard for CSS. CSS3 is completely backwards-compatible with earlier versions of CSS.' 
-		image: 'https://dl.dropboxusercontent.com/u/26906414/angular-cms/images/feature-css3.png'
+		title: 'Post 3'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet augue sed massa malesuada bibendum vitae at mi. Donec aliquam blandit cursus.' 
+		image: '//placehold.it/75'
 ]
