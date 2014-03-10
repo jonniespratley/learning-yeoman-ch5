@@ -1,9 +1,17 @@
-<h1>posts</h1>
-
-<ul>
+<ul class="media-list">
 	{{#each model}}
-	<li>
-		{{#link-to 'post' this}}{{this.id}}{{/link-to}}
+	<li class="media">
+
+		{{log this}}
+		
+		{{#link-to 'post' this}}
+		<img class="media-object img-thumbnail" {{bind-attr src=image}}/>
+		{{/link-to}}
+
+		<div class="media-body">
+			<h4 class="media-heading">{{ title }}</h4>
+			{{body}}
+		</div>
 	</li>
 	{{/each}}
 </ul>
