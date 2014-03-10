@@ -21,7 +21,7 @@ module.exports = function(config) {
       'app/bower_components/handlebars/handlebars.runtime.js',
       'app/bower_components/ember/ember.js',
       'app/bower_components/ember-data/ember-data.js',
-      
+      //'test/bower_components/chai/chai.js',
       '.tmp/scripts/combined-scripts.js',
       '.tmp/scripts/compiled-templates.js',
       'test/support/*.coffee',
