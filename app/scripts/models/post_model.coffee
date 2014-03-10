@@ -1,5 +1,10 @@
 #global Ember
-LearningYeomanCh5.Post = DS.Model.extend({})
+LearningYeomanCh5.Post = DS.Model.extend(
+  title: DS.attr('string')
+  body: DS.attr('string')
+  image: DS.attr('string')
+  published: DS.attr('boolean')
+)
 
 # probably should be mixed-in...
 LearningYeomanCh5.Post.reopen attributes: (->

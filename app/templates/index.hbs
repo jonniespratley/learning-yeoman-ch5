@@ -11,7 +11,7 @@
 <div id="pages" class="pages">
 	<ul class="list-group">
 		<ul class="list-unstyled">
-			{{#each post in posts}}
+			{{#each post in model}}
 			<li class="media post" data-id="{{post.id}}">
 				<a class="pull-left" {{bind-attr href=post.title}}> 
 					<img class="media-object img-thumbnail" alt="{{post.title}}" {{bind-attr src=post.image}}/> </a>

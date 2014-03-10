@@ -1,17 +1,16 @@
-<ul class="media-list">
+<ul class="media-list posts">
 	{{#each model}}
-	<li class="media">
-
-		{{log this}}
-		
-		{{#link-to 'post' this}}
-		<img class="media-object img-thumbnail" {{bind-attr src=image}}/>
+	<li class="media post">
+		{{#link-to 'post' this classNames='pull-left'}}
+		<img class="media-object img-thumbnail" {{ bind-attr src=image }}/>
 		{{/link-to}}
 
 		<div class="media-body">
 			<h4 class="media-heading">{{ title }}</h4>
-			{{body}}
+			<p>{{ body }}</p>
 		</div>
+
+		{{log this}}
 	</li>
 	{{/each}}
 </ul>
