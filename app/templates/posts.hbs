@@ -1,14 +1,19 @@
-<h1>Posts</h1>
+<div id="posts">
+	<legend>
+		Posts
+	</legend>
 
-<ul>
- {{#each model}}
- <li id="{{this.id}}">
-	{{#link-to 'post' this}}
-	<h3>{{this.title}}</h3>
-	{{/link-to}}
-	<p>{{this.body}}</p>
-</li>
-  {{/each}}
-</ul>
+	<div class="list-group">
+		{{#each model}}
+			{{#link-to 'post' this classNames='list-group-item'}}
+			<h4 class="list-group-item-heading">{{ title }}</h4>
+			<p class="list-group-item-text">
+				{{ body }}
+			</p>
+			{{log this}}
+			{{/link-to}}
+		{{/each}}
+	</div>
 
+</div>
 {{outlet}}
