@@ -1,4 +1,3 @@
-
 Ember.Test.JasmineAdapter = Ember.Test.Adapter.extend(
   asyncRunning: false
   asyncStart: ->
@@ -18,20 +17,31 @@ Ember.Test.JasmineAdapter = Ember.Test.Adapter.extend(
     return
 )
 
+#Inject a container element
 document.write('<div id="ember-testing-container"><div id="ember-testing"></div></div>');
 #document.write('<style>#ember-testing-container { position: absolute; background: white; bottom: 0; right: 0; width: 800px; height: 500px; overflow: auto; z-index: 9999; border: 5px solid #ccc; } #ember-testing { zoom: 80%; }</style>');
 
+#Set testing to true
 Ember.testing = true
+#Create a new test adapter
 Ember.Test.adapter = Ember.Test.JasmineAdapter.create()
+
+#Set the root element to the test container
 LearningYeomanCh5.rootElement = "#ember-testing"
 
-
+#Setup testing
 LearningYeomanCh5.setupForTesting()
+
+#Inject helpers
 LearningYeomanCh5.injectTestHelpers()
+
+#Set the adapter
 LearningYeomanCh5.ApplicationAdapter = DS.FixtureAdapter
 
 window.start = ->
 window.stop = ->
 
+#Global before each method.
 beforeEach ->
+	console.log('global beforeEach method')
 	#LearningYeomanCh5.reset()
