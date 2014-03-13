@@ -1,23 +1,21 @@
-<div id="app" class="container">
-	<header class="header">
+<article class="container">
+	<header>
 		<ul class="nav nav-pills pull-right">
-			{{#each model.menu.pub}}
+			{{#each LearningYeomanCh5.config.menu.pub}}
 			<li>
 				<a {{bind-attr href=href}}>{{ title }}</a>
 			</li>
 			{{/each}}
 		</ul>
-		<h3 class="brand text-muted"> {{ model.sitetitle }} </h3>
+		<h3 class="brand text-muted"> {{ LearningYeomanCh5.config.sitetitle }} </h3>
 		<hr />
 	</header>
-	{{outlet}}
-
-	<footer class="footer">
-		<hr />
+	<section>
+		{{outlet}}
+	</section>
+	<footer>
 		<p>
-			{{ model.sitecopy }}
+			{{ LearningYeomanCh5.config.sitecopy }}
 		</p>
 	</footer>
-</div>
-
-{{log model}}
+</article>

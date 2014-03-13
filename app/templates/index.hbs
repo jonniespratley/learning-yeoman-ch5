@@ -1,30 +1,12 @@
 <div class="jumbotron">
-	<h1>
-		{{ model.feature.title }}
-	</h1>
-	
-	<img {{bind-attr src=model.feature.image}}/>
+	<h1> {{ LearningYeomanCh5.feature.title }} </h1>
+	<img {{ bind-attr src=LearningYeomanCh5.config.feature.image }}/>
 	<p class="lead">
-		{{model.feature.body}}
+		{{ LearningYeomanCh5.config.feature.body }}
 	</p>
 </div>
 <div class="features">
-	<ul class="list-group">
-		<ul class="list-unstyled">
-			
-			{{#each feature in model.features}}
-			<li class="media" data-id="{{feature.id}}">
-				<a class="pull-left"> 
-					<img class="media-object img-thumbnail" {{bind-attr src=feature.image}}/> </a>
-				<div class="media-body">
-					<h4 class="media-heading">{{feature.title}}</h4>
-					<p>
-						{{feature.body}}
-					</p>
-				</div>
-			</li>
-			
-			{{/each}}
-		</ul>
-	</ul>
+	{{#each item in LearningYeomanCh5.config.features }}
+		{{ feature-item feature=item }}
+	{{/each}}
 </div>

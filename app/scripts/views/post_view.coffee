@@ -1,2 +1,1 @@
-LearningYeomanCh5.PostView = Ember.View.extend(
-)
+LearningYeomanCh5.PostView = Ember.View.extend()

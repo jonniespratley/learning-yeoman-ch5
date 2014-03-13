@@ -1,18 +1,15 @@
-<legend>Edit Post</legend>
-
-<table class="table table-bordered">
-  {{#each buffer}}
-  <tr>
-    <td>
-      <strong>{{key}}:</strong>
-    </td>
-    <td>
-      {{input value=value}}
-    </td>
-  </tr>
-  {{/each}}
-</table>
-
-<button {{action 'save'}}>Update</button>
-
-{{outlet}}
+<legend>
+	Edit Post
+</legend>
+<p>
+	{{input type="text"  class="form-control" value=title}}
+</p>
+<p>
+	{{input type="text" class="form-control" value=image}}
+</p>
+<p>
+	{{textarea rows="10" class="form-control" value=body}}
+</p>
+<button {{action 'save'}}>
+	Update
+</button>
