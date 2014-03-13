@@ -1,11 +1,11 @@
-applicationRoute = null
-describe "ApplicationRoute", ->
-	
+###
+describe "PostsRoute", ->
+	postsRoute = null
 	beforeEach ->
-		applicationRoute = LearningYeomanCh5.ApplicationRoute.create()
+		postsRoute = LearningYeomanCh5.PostsRoute.create()
 	
 	describe "model property", ->
-		
-		it "should have 3 features", ->
-			model = applicationRoute.model()
-			expect(model.features.length).toBe(3)
+		it "should have 3 posts", ->
+			model = postsRoute.model()
+			expect(model.length).toBe(3)
+###
