@@ -1,22 +1,26 @@
 #global Ember
 LearningYeomanCh5.Post = DS.Model.extend(
-  title: DS.attr('string')
-  body: DS.attr('string')
-  image: DS.attr('string')
-  published: DS.attr('boolean')
+	title: DS.attr('string')
+	body: DS.attr('string')
+	image: DS.attr('string')
+	published: DS.attr('boolean')
+	slug: (-> 
+		@get('title').replace(' ', '-').toLowerCase()
+	).property()
 )
 
 # probably should be mixed-in...
-LearningYeomanCh5.Post.reopen attributes: (->
-  model = this
-  Ember.keys(@get("data")).map (key) ->
-    Em.Object.create
-      model: model
-      key: key
-      valueBinding: "model." + key
-
-
-).property()
+LearningYeomanCh5.Post.reopen(
+	attributes: (->
+		model = this
+		Ember.keys(@get("data")).map (key) ->
+			Em.Object.create(
+				model: model
+				key: key
+				valueBinding: "model." + key
+			)
+	).property()
+)
 
 # delete below here if you do not want fixtures
 LearningYeomanCh5.Post.FIXTURES = [
