@@ -17,3 +17,8 @@ describe 'Posts page', ->
 	it 'should display default 3 posts', ->
 		visit('/posts').then ->
 			expect(find('.post').length).toBe(3)
+
+describe 'Post Detail page', ->
+	it 'should display 1 post', ->
+		visit('/posts/1').then ->
+			expect(find('#post-details').length).toBe(1)
