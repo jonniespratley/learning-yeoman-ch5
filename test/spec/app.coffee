@@ -1,22 +1,12 @@
-###
-describe "PostsRoute", ->
-	postsRoute = null
-	beforeEach ->
-		postsRoute = LearningYeomanCh5.PostsRoute.create()
-	
-	describe "model property", ->
-		it "should have 3 posts", ->
-			model = postsRoute.model()
-			expect(model.length).toBe(3)
-###
-
 describe 'PostModel', ->
-	postModel = null
+	store = LearningYeomanCh5.Store.create( revision: 4 )
+	postModel = LearningYeomanCh5.Post
 	
-	beforeEach ->
-		LearningYeomanCh5.reset()
-	
-	describe 'slug property should return title without whitespace, lowercased', ->
-		
-		it 'should have a sluged slug property', ->
-			postModel = LearningYeomanCh5.Post.create(title: 'Post Title', body: 'This is the body')
+	it 'title should be a string', ->
+		expect(postModel.metaForProperty('title').type).toEqual('string')
+	it 'body should be a string', ->
+		expect(postModel.metaForProperty('body').type).toEqual('string')
+	it 'image should be a string', ->
+		expect(postModel.metaForProperty('image').type).toEqual('string')
+	it 'published should be a boolean', ->
+		expect(postModel.metaForProperty('published').type).toEqual('boolean')
