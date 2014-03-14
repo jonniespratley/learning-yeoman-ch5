@@ -12,3 +12,8 @@ describe "Index page", ->
 			expect(text('.jumbotron p')).toBe(LearningYeomanCh5.config.feature.body)
 			expect(find('.jumbotron img').attr('src')).toBe(LearningYeomanCh5.config.feature.image)
 			expect(find('.feature').length).toBe(3)
+
+describe 'Posts page', ->
+	it 'should display default 3 posts', ->
+		visit('/posts').then ->
+			expect(find('.post').length).toBe(3)

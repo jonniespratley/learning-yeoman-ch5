@@ -2,9 +2,9 @@
 	<legend>
 		Posts
 	</legend>
-	<div class="list-group">
+	<div class="list-group posts">
 		{{#each model}}
-		{{#link-to 'post' this classNames='list-group-item'}} 
+		{{#link-to 'post' this classNames='list-group-item post'}} 
 			<h4 class="list-group-item-heading">{{ title }}</h4>
 			<p class="list-group-item-text">
 				{{ body }}
