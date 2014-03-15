@@ -1,10 +1,12 @@
 LearningYeomanCh5.PostEditController = Ember.ObjectController.extend(
-	#needs: 'post'
+	needs: 'post'
 	isEditing: false
 	actions:
 		save: ->
-			self = this
-			@get('buffer').forEach (attr)->
-				self.get('controllers.post.model').set(attr.key, attr.value)
-				@transitionToRoute 'post', @get('model')
+			@get('model').save()
+			@transitionToRoute 'post', @get('model')
+		destroy: ->
+			if confirm('This record will be deleted!')
+				@get('model').deleteRecord()
+				@transitionToRoute 'posts'
 )
