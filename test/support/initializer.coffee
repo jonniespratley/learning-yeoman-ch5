@@ -46,11 +46,3 @@ LearningYeomanCh5.injectTestHelpers()
 
 #Set the adapter
 LearningYeomanCh5.ApplicationAdapter = DS.FixtureAdapter
-
-window.start = ->
-window.stop = ->
-
-#Global before each method.
-beforeEach ->
-	console.log('global beforeEach method')
-	#LearningYeomanCh5.reset()
