@@ -1,12 +1,16 @@
 LearningYeomanCh5.PostEditController = Ember.ObjectController.extend(
 	needs: 'post'
-	isEditing: false
 	actions:
 		save: ->
 			@get('model').save()
-			@transitionToRoute 'post', @get('model')
+			@transitionToRoute 'posts'
 		destroy: ->
-			if confirm('This record will be deleted!')
-				@get('model').deleteRecord()
-				@transitionToRoute 'posts'
+			@get('model').deleteRecord()
+			@transitionToRoute 'posts'
+		create: ->
+			@store.createRecord('post', {
+				title: 'New Post'
+				body: 'This is a new post'
+				image: '//placehold.it/225'
+			})
 )
