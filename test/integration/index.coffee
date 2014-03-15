@@ -4,7 +4,7 @@ describe "Index page", ->
 		visit('/').then ->
 			expect(text('.brand')).toBe(LearningYeomanCh5.config.sitetitle)
 			expect(text('footer')).toBe(LearningYeomanCh5.config.sitecopy)
-			expect(find('.nav li').length).toEqual(LearningYeomanCh5.config.menu.pub.length)
+			expect(find('.nav li').length).toEqual(LearningYeomanCh5.config.menu.length)
 	
 	it "should display jumbotron title, image and body, and list features", ->
 		visit('/').then ->
