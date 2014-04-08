@@ -6,7 +6,7 @@ LearningYeomanCh5.Post = DS.Model.extend(
 	published: DS.attr('boolean')
 	slug: (-> 
 		@get('title').replace(' ', '-').toLowerCase()
-	).property()
+	).property('title')
 )
 
 # probably should be mixed-in...
