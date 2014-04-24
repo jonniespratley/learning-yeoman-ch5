@@ -9,7 +9,6 @@ describe "LearningYeomanCh5 Application", ->
 		visit('/').then ->
 			expect(LearningYeomanCh5.text('.jumbotron h1')).toBe(LearningYeomanCh5.config.feature.title)
 			expect(LearningYeomanCh5.text('.jumbotron p')).toBe(LearningYeomanCh5.config.feature.body)
-
 			expect(find('.jumbotron img').attr('src')).toBe(LearningYeomanCh5.config.feature.image)
 			expect(find('.feature').length).toBe(3)
 

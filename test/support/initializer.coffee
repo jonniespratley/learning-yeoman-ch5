@@ -39,10 +39,10 @@ LearningYeomanCh5.injectTestHelpers()
 #Set the adapter
 LearningYeomanCh5.ApplicationAdapter = DS.FixtureAdapter
 
-
+Helper = {}
 
 #Check if an element exists
-exists = (selector) ->
+LearningYeomanCh5.exists = (selector) ->
 	!!find(selector).length
 
 #Get the trimmed value from element
