@@ -24,9 +24,9 @@ module.exports = function(config) {
       //'test/bower_components/chai/chai.js',
       '.tmp/scripts/combined-scripts.js',
       '.tmp/scripts/compiled-templates.js',
-      'test/support/*.coffee',
-      'test/spec/*.coffee',
-      'test/integration/*.coffee'
+      '.tmp/support/*.js',
+      '.tmp/spec/*.js',
+      '.tmp/integration/*.js'
     ],
 
 

@@ -15,4 +15,7 @@ require 'scripts/routes/*'
 require 'scripts/views/*'
 require 'scripts/router'
 
+#Markdown helper
+Ember.Handlebars.helper "format-markdown", (input) ->
+	new Handlebars.SafeString(markdown.toHTML(input))
 
