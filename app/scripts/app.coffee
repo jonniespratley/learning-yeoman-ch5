@@ -1,9 +1,6 @@
 require 'scripts/config'
 
 LearningYeomanCh5 = window.LearningYeomanCh5 = Ember.Application.create(
-	LOG_VIEW_LOOKUPS: true
-	LOG_ACTIVE_GENERATION: true
-	LOG_BINDINGS: true
 	config: window.Config
 )
 
