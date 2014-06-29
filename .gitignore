@@ -6,3 +6,6 @@ dist
 app/bower_components
 .idea/
 .npm-debug.log
+coverage
+.grunt
+.project
