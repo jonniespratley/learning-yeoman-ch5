@@ -39,11 +39,20 @@ module.exports = function(config) {
     // List of files to exclude.
     exclude : [],
 
+		plugins: ['karma-*'],
+		reporters: ['progress', 'coverage'],
 
-    // Test results reporter to use.
-    // Possible values: 'dots', 'progress', 'junit'
-    reporters : ['progress'],
+		//Coverage and coffee
+		preprocessors: {
+			'.tmp/scripts/**/*.js': ['coverage']
+		},
 
+		// optionally, configure the reporter
+		coverageReporter: {
+			type: 'html',
+			dir: 'coverage/'
+		},
+    
 
     // Web server port.
     port : 9876,
