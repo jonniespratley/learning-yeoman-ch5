@@ -133,10 +133,10 @@ module.exports = function (grunt) {
             }
         },
         coffee: {
-        	options: {
-        		bare: true,
-        		sourceMap: false
-        	},
+          options: {
+            bare: true,
+            sourceMap: false
+          },
             dist: {
                 files: [{
                     expand: true,
