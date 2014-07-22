@@ -6,7 +6,7 @@ LearningYeomanCh5.Post = DS.Model.extend(
 	published: DS.attr('boolean', {defaultValue: true})
 	created: DS.attr('date', {defaultValue: () -> new Date()})
 	slug: (-> 
-		@get('title').replace(' ', '-').toLowerCase()
+		@get('title').replace(/\W/, '-').toLowerCase()
 	).property('title')
 )
 

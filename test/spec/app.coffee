@@ -1,5 +1,5 @@
 describe 'PostModel', ->
-	store = LearningYeomanCh5.Store.create( revision: 4 )
+	#store = LearningYeomanCh5.Store.create( revision: 4 )
 	postModel = LearningYeomanCh5.Post
 	
 	it 'title should be a string', ->
